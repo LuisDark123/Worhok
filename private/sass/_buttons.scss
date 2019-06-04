@@ -1,0 +1,27 @@
+.button{
+	max-width: 260px;
+	height: auto;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 15px 20px;
+	color: $colorPrimary;
+	border: 2px solid transparent;
+    border-image: linear-gradient(to right, $colorPrimary 0%, $colorSecondary 100%) 1;
+    transition: .4s all ease;
+    &:hover{
+    	color: $colorLight;
+    	background: linear-gradient(to right, $colorPrimary, $colorSecondary);
+    	transform: translateX(12px);
+    	transition: .4s all ease;
+    	@include boxShadow;
+    }
+	& p{
+		margin: 0;
+		font-weight: bolder;
+	}
+	& i{
+		margin-left: 10px;
+		font-size: 1.6rem;
+	}
+}

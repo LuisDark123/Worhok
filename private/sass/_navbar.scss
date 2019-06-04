@@ -1,0 +1,36 @@
+header{
+	width: calc(100% - 40px);
+	height: auto;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	& nav{
+		& ul{
+			& li{
+				list-style: none;
+				& a{
+					display: inline-flex;
+					align-items: center;
+					color: $colorLight;
+					padding: 10px;
+					margin: 0 30px;
+					& i{
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.nav-social{
+	& a{
+	font-size: 1.4rem;
+	color: $colorLight;
+	margin: 0 10px;
+	}
+}
