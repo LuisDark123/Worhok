@@ -1,0 +1,18 @@
+// Shadows Utilities
+
+$shadow: rgba(0,0,0,.6);
+$shadowWidth: 0;
+$shadowHeight: 0;
+$shadowExpand: 10px;
+
+.text-shadow{
+	text-shadow: $shadowWidth $shadowHeight $shadowExpand $shadow;
+}
+
+@mixin textShadow(){
+	text-shadow: $shadowWidth $shadowHeight $shadowExpand $shadow;
+}
+
+@mixin boxShadow(){
+	box-shadow: $shadowWidth $shadowHeight $shadowExpand $shadow;
+}
