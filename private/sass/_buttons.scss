@@ -16,7 +16,13 @@
     	transition: .4s all ease;
     	@include boxShadow;
     }
-	& p{
+    @media #{$m}{
+    	background: linear-gradient(to right, $colorPrimary, $colorSecondary);
+    	color: $colorLight;
+    	@include boxShadow;
+    }
+	& small{
+		font-size: 1rem;
 		margin: 0;
 		font-weight: bolder;
 	}
