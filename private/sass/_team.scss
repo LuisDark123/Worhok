@@ -1,0 +1,32 @@
+.team-card-preview{
+	width: 300px;
+	min-height: 450px;
+	background-color: $colorDark;
+	color: $colorLight;
+	text-align: center;
+	padding: 45px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	margin: 10px 0;
+	@include boxShadow;	
+	& h3{
+		margin-bottom: 10px;
+	}
+	& p{
+		font-size: .9rem;
+	}
+	@media #{$sm}{
+		// width: ;
+		height: auto;
+		max-height: auto;
+	}
+}
+
+.team-section-preview{
+	width: 100%;
+	height: auto;
+	min-height: 100vh;
+	@include backgroundImage(center);
+}

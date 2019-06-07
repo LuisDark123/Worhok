@@ -60,12 +60,12 @@ main{
 	align-items: center;
 	@include boxShadow;
 	@media #{$sm} {
-		width: calc(100% - 12px);
+		width: 95%;
 		position: relative;
 		padding: 0 8px 0 4px;
-		top: 0px;
-		left: 0;
+		top: 0;
 		right: 0;
+		margin-left: auto;
 	}
 	& img{
 		max-width: 118px;
