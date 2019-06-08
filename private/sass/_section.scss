@@ -1,7 +1,7 @@
 .image-section{	
 	&-left{
 		width: 100%;
-		height: 700px;
+		min-height: 100vh;
 		background-size: cover;
 		background-position: left bottom;
 		background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 	}
 	&-right{
 		width: 100%;
-		height: 700px;
+		min-height: 100vh;
 		background-size: cover;
 		background-position: right bottom;
 		background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 }
 
 .global-section-full{
-	height: 700px;
+	height: 100vh;
 	overflow: hidden;
 	@media #{$m}{
 		height: auto;
@@ -51,8 +51,11 @@
 	color: $colorLight;
 	margin-left: 8%;
 	position: relative;
-	top: -80%;
+	top: -85vh;
 	@include textShadow;
+	@media #{$retina}{
+		top: -60vh;
+	}
 	@media #{$l}{
 		width: 350px;
 		background-color: $colorBlack;
@@ -67,14 +70,14 @@
 		width: calc(100% - 20px);
 		margin: auto;
 		padding: 45px 10px 30px 10px;
+		color: $colorDark;
+		background-color: $colorLight;
 		text-align: center;
 	}
 	@media #{$sm}{
 		width: calc(100% - 30px);
 		padding: 30px 15px 10px 15px;
 		margin: 0;
-		color: $colorLight;
-		background-color: $colorBlack;
 		text-align: left;
 	}
 	& h2{
@@ -83,8 +86,11 @@
 			color: $colorPrimary;
 			font-size: 2rem;
 		}
+		@media #{$m}{
+			text-shadow: none;
+		}
 		@media #{$sm}{
-			font-size: 1.4rem;
+			font-size: 2rem;
 		}
 	}
 	& strong{
@@ -93,6 +99,9 @@
 		@media #{$l}{
 			color: $colorDark;
 			font-size: 2rem;
+		}
+		@media #{$m}{
+			text-shadow: none;
 		}
 		@media #{$sm}{
 			font-size: 1.8rem;
@@ -104,6 +113,9 @@
 		margin: 15px 0 60px 0;
 		@media #{$l}{
 			font-size: 1.2rem;
+		}
+		@media #{$m}{
+			text-shadow: none;
 		}
 		@media #{$sm}{
 			margin-bottom: 45px;
@@ -119,8 +131,11 @@
 	margin-left: auto;
 	margin-right: 2%;
 	position: relative;
-	top: -80%;
+	top: -85vh;
 	@include textShadow;
+	@media #{$retina}{
+		top: -60vh;
+	}
 	@media #{$l}{
 		width: 350px;
 		background-color: $colorBlack;
@@ -134,14 +149,14 @@
 		width: calc(100% - 20px);
 		margin: auto;
 		padding: 45px 10px 30px 10px;
+		color: $colorBlack;
+		background-color: $colorLight;
 		text-align: center;
 	}
 	@media #{$sm}{
 		width: calc(100% - 30px);
-		padding: 30px 15px 10px 15px;
+		padding: 30px 15px 30px 15px;
 		margin: 0;
-		color: $colorLight;
-		background-color: $colorBlack;
 		text-align: left;
 	}
 	& h2{
@@ -151,8 +166,11 @@
 			color: $colorPrimary;
 			font-size: 2rem;
 		}
+		@media #{$m}{
+			text-shadow: none;
+		}
 		@media #{$sm}{
-			font-size: 1.4rem;
+			font-size: 2rem;
 		}
 	}
 	& strong{
@@ -160,12 +178,15 @@
 		color: $colorPrimary;
 		text-shadow: 0 0 8px rgba(0,0,0,1);
 		@media #{$l}{
-			color: $colorLight;
+			color: $colorDark;
 			font-size: 2rem;
+		}
+		@media #{$m}{
+			text-shadow: none;
 		}
 		@media #{$sm}{
 			font-size: 1.8rem;
-			color: $colorLight;
+			color: $colorDark;
 		}
 	}
 	& p{
@@ -174,6 +195,9 @@
 		text-shadow: 0 0 8px rgba(0,0,0,1);
 		@media #{$l}{
 			font-size: 1.2rem;
+		}
+		@media #{$m}{
+			text-shadow: none;
 		}
 		@media #{$sm}{
 			margin-bottom: 45px;

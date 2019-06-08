@@ -1,0 +1,33 @@
+.barcontact{
+	width: calc(100% - 30px);
+	height: auto;
+	padding: 15px;
+	background-color: $colorPrimary;
+	color: $colorLight;
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
+	@include boxShadow;
+	@media #{$m}{
+		justify-content: center;
+	}
+	& div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: .9rem;
+		margin-left: 20px;
+		@media #{$sm}{
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		&:nth-of-type(1){
+		@media #{$m}{
+			display: none;
+		}
+	}
+		& p{
+			margin: 0 0 0 5px;
+		}
+	}
+}

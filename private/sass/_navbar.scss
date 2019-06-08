@@ -19,7 +19,8 @@ header{
 			z-index: 8;
 			padding-top: 10px;
 			color: $colorDark;
-			background-image: url(../images/1x/wallpaper_oficial_worhok.png);
+			background-image: url(../images/1x/wallpaper_nav.png);
+			@include backgroundImage(center bottom);
 			transition: .5s all ease;
 		}
 		@media #{$sm}{
