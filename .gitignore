@@ -1,7 +1,6 @@
 bin
 node_modules
 routes
-views
 app.js
 package-lock.json
 package.json
