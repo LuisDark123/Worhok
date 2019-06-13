@@ -36,7 +36,12 @@ body{
 	overflow-x: hidden;
 	user-select: none;
 	outline: none;
-	background-color: $colorBlack;
+	background-color: $colorDark;
+	color: $colorLight;
+}
+
+button{
+	font-family: 'montserrat', system-ui !important;
 }
 
 a:any-link{

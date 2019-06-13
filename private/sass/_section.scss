@@ -7,12 +7,15 @@
 		background-repeat: no-repeat;
 		@media #{$l}{
 			width: 100%;
+			background-position-x: 20%;
 		}
 		@media #{$m}{
 			height: 600px;
+			background-position-x: -5%;
 		}
 		@media #{$sm}{
 			height: 450px;
+			background-position-x: 15%;
 		}
 	}
 	&-right{
@@ -23,12 +26,15 @@
 		background-repeat: no-repeat;
 		@media #{$l}{
 			width: 100%;
+			background-position-x: 80%;
 		}
 		@media #{$m}{
 			height: 600px;
+			background-position-x: 115%;
 		}
 		@media #{$sm}{
 			height: 450px;
+			background-position-x: 92%;
 		}
 	}
 }
@@ -36,12 +42,10 @@
 .global-section-full{
 	height: 100vh;
 	overflow: hidden;
+	background-color: $colorBlack;
 	@media #{$m}{
 		height: auto;
 		overflow: none;
-	}
-	@media #{$sm}{
-		margin: 60px 0 60px 0;
 	}
 }
 
@@ -91,21 +95,6 @@
 		}
 		@media #{$sm}{
 			font-size: 2rem;
-		}
-	}
-	& strong{
-		font-size: 2.5rem;
-		color: $colorPrimary;
-		@media #{$l}{
-			color: $colorDark;
-			font-size: 2rem;
-		}
-		@media #{$m}{
-			text-shadow: none;
-		}
-		@media #{$sm}{
-			font-size: 1.8rem;
-			color: $colorLight;
 		}
 	}
 	& p{
@@ -178,7 +167,7 @@
 		color: $colorPrimary;
 		text-shadow: 0 0 8px rgba(0,0,0,1);
 		@media #{$l}{
-			color: $colorDark;
+			color: $colorLight;
 			font-size: 2rem;
 		}
 		@media #{$m}{

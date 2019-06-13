@@ -1,0 +1,135 @@
+%content-wrapper-default{
+	display: flex;
+	align-items: center;
+	height: auto;
+	min-height: 600px;
+	justify-content: flex-start;
+	@media #{$l}{
+		flex-direction: column-reverse;
+		padding: 60px 30px;
+	}
+	@media #{$m}{
+		padding: 60px 20px;
+		width: calc(100% - 40px);
+	}
+	& div{
+		width: 45%;
+		@media #{$l}{
+			width: 530px;
+		}
+		@media #{$m}{
+			width: 100%;
+		}
+		& p{
+		font-size: 1.3rem;
+	}
+	}
+	& img{
+		@media #{$m}{
+			width: 90%;
+			height: auto;
+		}
+	}
+}
+
+.content-wrapper-left{
+	@extend %content-wrapper-default;
+	padding-left: 4%;
+	& img{
+		margin: auto;
+		@media #{$l}{
+			margin: 0;
+		}
+	}
+}
+
+.content-wrapper-right{
+	@extend %content-wrapper-default;
+	flex-direction: row-reverse;
+	@media #{$l}{
+		flex-direction: column-reverse;
+	}
+	padding-right: 4%;
+	& img{
+		margin: auto;
+		@media #{$l}{
+			margin: 0;
+		}
+	}
+}
+
+.jumbotron-page{
+	width: calc(100% - 60px);
+	height: auto;
+	min-height: 500px;
+	margin: 30px 0;
+	color: $colorLight;
+	display: flex;
+	padding: 60px 30px;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	background: linear-gradient(to right, rgba(142,39,220,1) 0%, rgba(142,39,220,1) 17%, rgba(35,3,124,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e27dc', endColorstr='#23037c', GradientType=1 );
+    @media #{$m}{
+    	width: calc(100% - 30px);
+    	padding: 60px 15px;
+    }
+	& div:first-child{
+		width: 440px;
+		@media only screen and(max-width: 1156px){
+		    text-align: center;
+		    margin-bottom: 30px;
+	    }
+	    @media #{$m}{
+	    	width: 100%;
+	    }
+		& h2{
+			margin-top: 0;
+		}
+		& p{
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.jumbotron-page-footer{
+	width: calc(100% - 60px);
+	height: auto;
+	margin: 30px 0 0 0;
+	color: $colorLight;
+	display: flex;
+	padding: 60px 30px;
+	font-weight: bolder;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	background: linear-gradient(to right, rgba(142,39,220,1) 0%, rgba(142,39,220,1) 17%, rgba(35,3,124,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8e27dc', endColorstr='#23037c', GradientType=1 );
+    & div{
+    	@media #{$l}{
+    		width: 100%;
+    	}
+    	& h2{
+    		margin: 0 0 15px 0;
+    	}
+    	& p{
+    		margin: 15px 0 0 0;
+    	}
+    }
+}
+
+.jumbotron-subcontainer-images{
+	width: 640px;
+	height: 200px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	@media #{$m}{
+	    	width: 100%;
+	    	height: auto;
+	    	justify-content: space-evenly;
+	    }
+}
